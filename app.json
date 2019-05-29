@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/information/index/index",
+    "pages/logs/logs",
+    "pages/information/detail/detail"
+  ],
+  
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#158ced",
+    "navigationBarTitleText": "法院快报",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

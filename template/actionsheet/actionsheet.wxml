@@ -1,0 +1,21 @@
+
+<view hidden='{{!isShow}}'>
+  <view class="modal">
+    <view class='modal-content'>
+      <view class='modal-top'>
+        <view class='header'>{{modalTitle}}</view>
+      </view>
+      <view class='modal-body'>
+        <button>重复、旧闻</button>
+        <button>质量内容差</button>
+        <button>涉黄、涉恐</button>
+        <button>不良言论</button>
+      </view>
+      <view class='modal-footer'  catchtap='_cancelEvent'>
+        <!-- <text class='cancle' catchtap='_cancelEvent'>取消</text>
+        <text class='sure' catchtap='_confirmEvent'>确定</text> -->
+        <text>不感兴趣</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,131 @@
+<!--<import src="/template/information/loads.wxml" />
+<template is="loads" data="{{hidden:hid}}"/>
+
+<import src="/template/information/index/figure.wxml"/>
+<template is="figure" data="{{display:dis}}"/>-->
+
+<!--<view class="menu">
+    <scroll-view class="scroll-view_H" scroll-x="true" >
+        <view id="{{menu_id}}" bindtap="click_menu" wx:for="{{menu}}" wx:for-index="menu_id" wx:for-item="item" class="nav_font">
+            <block wx:if="{{menu_id == menuStatic}}"><text class="nav_hover">{{item}}</text></block>
+            <block wx:else>{{item}}</block>
+        </view> 
+    </scroll-view>
+    <view class="add_menu">
+        <image src="/images/swdw.png"></image>
+    </view>
+</view>-->
+
+<!-- <view class="swiper">
+    <progress percent="100" stroke-width="2" active color="#3080c0"/>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" height="150"/>
+            </swiper-item>
+        </block>
+    </swiper>
+</view> -->
+
+<view class="news_content" id="1" catchtap="detail">
+    <!-- <view class="news_content_left">
+      <view class="news_content_left_top">
+          <view class="text_top">岳云鹏微博发声支持师父郭德纲：我没教过学费</view>
+      </view>
+      <view class="news_content_left_but">
+          <text style="margin-left:10px;">刚刚</text><span catchtap="showDialog">X</span>
+      </view>
+    </view>
+    <view class="news_content_right">
+        <image src="/images/pic1.jpeg"></image>
+    </view> -->
+    
+      <block wx:for="{{articles}}">
+        <view>{{index}}:</view>
+        <view>{{item.author}}:</view>
+    </block>
+</view>
+
+
+
+<view class="news_content_three" id="2" catchtap="detail">
+    <view class="news_content_top">
+      <view class="news_content_top_top">
+          <view class="text_top">岳云鹏微博发声支持师父郭德纲：我没教过学费</view>
+      </view>
+      <view class="news_content_top_bottom">
+        <image src="/images/pic1.jpeg"></image>
+        <image src="/images/pic1.jpeg"></image>
+        <image src="/images/pic1.jpeg"></image>
+      </view>
+      <view style='clear:both'></view>
+      <view class="news_content_left_but">
+          <text style="">刚刚</text><span>X</span>
+      </view>
+    </view>
+</view>
+
+<view class="news_content_three" id="2" catchtap="detail">
+    <view class="news_content_top">
+      <view class="news_content_top_top">
+          <view class="text_top">岳云鹏微博发声支持师父郭德纲：我没教过学费</view>
+      </view>
+      <view class="news_content_top_bottom">
+        <image src="/images/pic1.jpeg"></image>
+        <image src="/images/pic1.jpeg"></image>
+        <image src="/images/pic1.jpeg"></image>
+      </view>
+      <view style='clear:both'></view>
+      <view class="news_content_left_but">
+          <text style="">刚刚</text><span>X</span>
+      </view>
+    </view>
+</view>
+<view class="news_content" id="1" catchtap="detail">
+    <view class="news_content_left">
+      <view class="news_content_left_top">
+          <view class="text_top">岳云鹏微博发声支持师父郭德纲：我没教过学费</view>
+      </view>
+      <view class="news_content_left_but">
+          <text style="margin-left:10px;">刚刚</text><span>X</span>
+      </view>
+    </view>
+    <view class="news_content_right">
+        <image src="/images/pic1.jpeg"></image>
+    </view>
+</view>
+
+<view class="news_content" id="1" catchtap="detail">
+    <view class="news_content_left">
+      <view class="news_content_left_top">
+          <view class="text_top">岳云鹏微博发声支持师父郭德纲：我没教过学费</view>
+      </view>
+      <view class="news_content_left_but">
+          <text style="margin-left:10px;">刚刚</text><span>X</span>
+      </view>
+    </view>
+    <view class="news_content_right">
+        <image src="/images/pic1.jpeg"></image>
+    </view>
+</view>
+
+<view class="news_content" id="1" catchtap="detail">
+    <view class="news_content_left">
+      <view class="news_content_left_top">
+          <view class="text_top">岳云鹏微博发声支持师父郭德纲：我没教过学费</view>
+      </view>
+      <view class="news_content_left_but">
+          <text style="margin-left:10px;">刚刚</text><span>X</span>
+      </view>
+    </view>
+    <view class="news_content_right">
+        <image src="/images/pic1.jpeg"></image>
+    </view>
+</view>
+
+<!-- 引用组件的页面模版 -->
+<actionsheet id='actionsheet' 
+    modalTitle='可选理由，精准屏蔽' 
+    modalMsg='' 
+    bind:cancelEvent="_cancelEvent">
+</actionsheet>

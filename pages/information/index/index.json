@@ -1,0 +1,6 @@
+{
+   "navigationBarTitleText": "法院快报",
+   "usingComponents": {
+    "actionsheet": "/template/actionsheet/actionsheet"
+   }
+}
